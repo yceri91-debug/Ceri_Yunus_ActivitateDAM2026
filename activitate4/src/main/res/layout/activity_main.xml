@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adaugare ceas"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ET_marca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Marca ceasului"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/ET_culoare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Culoarea ceasului"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/ET_pret"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Pretul in lei"
+            android:inputType="numberDecimal" />
+
+        <CheckBox
+            android:id="@+id/CB_digital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Ceas digital" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipul ceasului:" />
+
+        <RadioGroup
+            android:id="@+id/RG_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/RB_mana"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:minHeight="48dp"
+                android:text="De mana" />
+
+            <RadioButton
+                android:id="@+id/RB_perete"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="De perete" />
+
+            <RadioButton
+                android:id="@+id/RB_birou"
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="De birou" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mecanism:" />
+
+        <Spinner
+            android:id="@+id/SP_mecanism"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evaluare:" />
+
+        <RatingBar
+            android:id="@+id/RB_evaluare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="3"
+            android:stepSize="1" />
+
+        <Switch
+            android:id="@+id/SW_pornit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Ceasul este pornit" />
+
+        <Button
+            android:id="@+id/BTN_salvare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Salveaza ceasul" />
+
+        <Button
+            android:id="@+id/BTN_adaugare"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Adauga un ceas"
+            android:minHeight="48dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/TV_titlu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+</ScrollView>
