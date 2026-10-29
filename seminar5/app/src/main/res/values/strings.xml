@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">seminar5</string>
+    <string name="marca">Marcă</string>
+    <string name="culoare">Culoare</string>
+    <string name="pret">Preț</string>
+    <string name="salveaza">Salvează</string>
+</resources>

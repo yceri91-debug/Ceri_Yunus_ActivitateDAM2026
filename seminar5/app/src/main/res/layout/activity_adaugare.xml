@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText android:id="@+id/ET_marca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/marca" />
+
+    <EditText android:id="@+id/ET_culoare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/culoare" />
+
+    <EditText android:id="@+id/ET_pret"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pret"
+        android:inputType="numberDecimal" />
+
+    <Button android:id="@+id/BTN_salveaza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/salveaza" />
+</LinearLayout>
