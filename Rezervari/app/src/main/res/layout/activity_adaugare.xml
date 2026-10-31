@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdaugareActivity">
+
+    <EditText
+        android:id="@+id/ET_nume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nume" />
+
+    <EditText
+        android:id="@+id/ET_telefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Telefon"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/ET_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Data"
+        android:focusable="false"/>
+
+
+    <EditText
+        android:id="@+id/ET_ora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Ora"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/ET_persoane"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Numar Persoane"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/ET_masa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masa"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/BTN_salveaza"
+        android:layout_width="130dp"
+        android:layout_height="47dp"
+        android:text="Salveaza" />
+</LinearLayout>
