@@ -20,6 +20,15 @@ public class AdaugareActivity extends AppCompatActivity {
         EditText etPret = findViewById(R.id.ET_pret);
         Button btnSalveaza = findViewById(R.id.BTN_salveaza);
 
+        Ceas ceasDeEditat = (Ceas) getIntent().getSerializableExtra("ceas");
+        int pozitie = getIntent().getIntExtra("pozitie", -1);
+
+        if (ceasDeEditat != null) {
+            etMarca.setText(ceasDeEditat.getMarca());
+            etCuloare.setText(ceasDeEditat.getCuloare());
+            etPret.setText(String.valueOf(ceasDeEditat.getPret()));
+        }
+
         btnSalveaza.setOnClickListener(v -> {
             String marca = etMarca.getText().toString().trim();
             String culoare = etCuloare.getText().toString().trim();
@@ -34,8 +43,13 @@ public class AdaugareActivity extends AppCompatActivity {
 
             Intent rezultat = new Intent();
             rezultat.putExtra("ceas", ceas);
+            if (pozitie != -1) {
+                rezultat.putExtra("pozitie", pozitie);
+            }
             setResult(RESULT_OK, rezultat);
             finish();
+
+            int test = 0;
         });
     }
 }
