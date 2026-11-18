@@ -36,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button btnImagini = findViewById(R.id.BTN_imagini);
+        btnImagini.setOnClickListener(v ->
+                startActivity(new Intent(this, ImaginiActivity.class)));
+
         Button btnAdaugare = findViewById(R.id.BTN_adaugare);
         Button btnLista = findViewById(R.id.BTN_lista);
 

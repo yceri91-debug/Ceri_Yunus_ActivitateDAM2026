@@ -10,6 +10,12 @@
         android:layout_height="wrap_content"
         android:text="Adaugă ceas" />
 
+    <Button
+        android:id="@+id/BTN_imagini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Imagini" />
+
     <Button android:id="@+id/BTN_lista"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
