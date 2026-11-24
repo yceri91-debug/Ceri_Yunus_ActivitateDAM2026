@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Laborator 9</string>
+    <string name="numele_orasului">Numele orașului</string>
+    <string name="caut_vremea">Caută vremea</string>
+    <string name="numele_oraului">Numele orașului</string>
+    <string name="cauta_vremea">Caută vremea</string>
+    <string name="vremea">Vremea</string>
+</resources>
